@@ -1,0 +1,29 @@
+{
+  "name": "readability-cli",
+  "version": "0.1.0",
+  "description": "A CLI tool to extract article text from webpages using Mozilla's readability",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aarmea/readability-cli.git"
+  },
+  "keywords": [
+    "readability"
+  ],
+  "author": "Albert Armea <npm@albertarmea.com> (https://albertarmea.com)",
+  "license": "Apache-2.0",
+  "bin": {
+    "readability-cli": "./index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/aarmea/readability-cli/issues"
+  },
+  "homepage": "https://github.com/aarmea/readability-cli#readme",
+  "dependencies": {
+    "commander": "^2.14.1",
+    "readability": "git+https://github.com/mozilla/readability.git#264b8e8"
+  }
+}
