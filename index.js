@@ -44,13 +44,13 @@ JSDOM.fromURL(url, JSDOM_OPTIONS)
     var article =
       new Readability(document.documentURI, dom.window.document).parse();
     if (options.json) {
-      console.log(article);
+      console.log(JSON.stringify(article));
     } else if (options.html) {
       console.log(article.content);
     } else {
       console.log(article.textContent);
     }
   }).catch(error => {
-    console.log(error);
+    console.log(JSON.stringify(error));
     process.exit(1);
   });
