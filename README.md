@@ -1,31 +1,33 @@
-readability-cli
-===============
+readability-scrape
+==================
 
-readability-cli is a command line tool to download simplified versions of
-webpages. It uses [Readability.js](https://github.com/mozilla/readability), the
-library used in Firefox's reader view, to do this.
+readability-scrape is a command line tool to download simplified versions of
+webpages. Unlike similar tools, it imports
+[Readability.js](https://github.com/mozilla/readability), the library used in
+Firefox's reader view, directly from Mozilla's repository so that it will be
+more up-to-date.
 
 Installation
 ------------
 
-readability-cli is available via npm:
+readability-scrape is available via npm:
 
-    npm install -g readability-cli
+    npm install -g readability-scrape
 
 Usage
 -----
 
 Pass in the URL of a webpage to retrieve it as plain text:
 
-    readability-cli https://example.com/path
+    readability-scrape https://example.com/path
 
 Use the `--html` option to get simplified HTML output:
 
-    readability-cli --html https://example.com/path
+    readability-scrape --html https://example.com/path
 
 Use `--json` to get Readability's full output as JSON:
 
-    readability-cli --json https://example.com/path
+    readability-scrape --json https://example.com/path
 
 The JSON output will contain at least these properties:
 
