@@ -28,15 +28,19 @@ if (typeof url === "undefined") {
   process.exit(1);
 }
 
-JSDOM.fromURL(url, JSDOM_OPTIONS).then(dom => {
-  // Readability relies on a global Node object to work properly
-  // https://github.com/mozilla/readability/issues/346
-  global.Node = dom.window.Node;
+JSDOM.fromURL(url, JSDOM_OPTIONS)
+  .then(dom => {
+    // Readability relies on a global Node object to work properly
+    // https://github.com/mozilla/readability/issues/346
+    global.Node = dom.window.Node;
 
-  // TODO: Extract all of the links from the DOM before calling Readability
+    // TODO: Extract all of the links before calling Readability
 
-  var document = dom.window.document;
-  var article =
-    new Readability(document.documentURI, dom.window.document).parse();
-  console.log(article);
-});
+    var document = dom.window.document;
+    var article =
+      new Readability(document.documentURI, dom.window.document).parse();
+    console.log(article);
+  }).catch(error => {
+    console.log(error);
+    process.exit(1);
+  });
