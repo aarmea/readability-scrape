@@ -1,6 +1,6 @@
 {
   "name": "readability-scrape",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A CLI tool to extract article text from webpages using Mozilla's readability",
   "main": "index.js",
   "scripts": {
