@@ -25,6 +25,6 @@
   "dependencies": {
     "commander": "^2.14.1",
     "jsdom": "^11.6.2",
-    "readability": "git+https://github.com/mozilla/readability.git#8525c6a"
+    "readability": "git+https://github.com/mozilla/readability.git#3c76104"
   }
 }
