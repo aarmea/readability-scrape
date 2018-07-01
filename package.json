@@ -23,8 +23,8 @@
   },
   "homepage": "https://github.com/aarmea/readability-scrape#readme",
   "dependencies": {
-    "commander": "^2.14.1",
-    "jsdom": "^11.6.2",
-    "readability": "git+https://github.com/mozilla/readability.git#3c76104"
+    "commander": "^2.16.0",
+    "jsdom": "^11.11.0",
+    "readability": "git+https://github.com/mozilla/readability.git#076bf2017be0e28df6a46042eee52209a477f5e6"
   }
 }
